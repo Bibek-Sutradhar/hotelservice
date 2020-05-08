@@ -5,7 +5,7 @@ RUN git clone https://github.com/Bibek-Sutradhar/HotelService.git
 
 FROM maven:3.5-jdk-8-alpine as build
 WORKDIR /app
-COPY --from=clone /usr/src/HotelService/hotelService /app
+COPY --from=clone /usr/src/HotelService/hotelservice /app
 RUN mvn install
 
 
